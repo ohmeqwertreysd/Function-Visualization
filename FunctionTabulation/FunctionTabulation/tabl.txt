@@ -1,0 +1,16 @@
+sin(x)
+y(x)=sin(x^2)+sin(x)^3
+The result of the calculation.
+y(1)	1.43729
+y(2)	-0.00497555
+y(3)	0.414929
+y(4)	-0.721362
+y(5)	-1.01412
+y(6)	-1.01359
+y(7)	-0.670177
+y(8)	1.88844
+y(9)	-0.559893
+y(10)	-0.667374
+y(x)=sin(x)
+The result of the calculation.
+y(1)	0.841471
