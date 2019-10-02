@@ -81,11 +81,11 @@ namespace FunctionTabulationWinAPI {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea2 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::StripLine^ stripLine2 = (gcnew System::Windows::Forms::DataVisualization::Charting::StripLine());
-			System::Windows::Forms::DataVisualization::Charting::Legend^ legend2 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
-			System::Windows::Forms::DataVisualization::Charting::Series^ series2 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
-			System::Windows::Forms::DataVisualization::Charting::Title^ title2 = (gcnew System::Windows::Forms::DataVisualization::Charting::Title());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea1 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::StripLine^ stripLine1 = (gcnew System::Windows::Forms::DataVisualization::Charting::StripLine());
+			System::Windows::Forms::DataVisualization::Charting::Legend^ legend1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^ series1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::Title^ title1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Title());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
@@ -239,42 +239,46 @@ namespace FunctionTabulationWinAPI {
 				| System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->chart1->BackColor = System::Drawing::SystemColors::Control;
-			chartArea2->Area3DStyle->WallWidth = 1;
-			chartArea2->AxisX->LabelStyle->Interval = 0;
-			chartArea2->AxisX->LabelStyle->IntervalOffset = 0;
-			chartArea2->AxisX->LineWidth = 2;
-			chartArea2->AxisX->StripLines->Add(stripLine2);
-			chartArea2->AxisY->Enabled = System::Windows::Forms::DataVisualization::Charting::AxisEnabled::True;
-			chartArea2->AxisY->LabelStyle->Interval = 0;
-			chartArea2->AxisY->LabelStyle->IntervalOffset = 0;
-			chartArea2->AxisY->LineWidth = 2;
-			chartArea2->Name = L"ChartArea1";
-			this->chart1->ChartAreas->Add(chartArea2);
-			legend2->BackColor = System::Drawing::SystemColors::Control;
-			legend2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			chartArea1->Area3DStyle->WallWidth = 1;
+			chartArea1->AxisX->LabelStyle->Interval = 0;
+			chartArea1->AxisX->LabelStyle->IntervalOffset = 0;
+			chartArea1->AxisX->LineWidth = 2;
+			chartArea1->AxisX->StripLines->Add(stripLine1);
+			chartArea1->AxisY->Enabled = System::Windows::Forms::DataVisualization::Charting::AxisEnabled::True;
+			chartArea1->AxisY->LabelStyle->Interval = 0;
+			chartArea1->AxisY->LabelStyle->IntervalOffset = 0;
+			chartArea1->AxisY->LineWidth = 2;
+			chartArea1->Name = L"ChartArea1";
+			this->chart1->ChartAreas->Add(chartArea1);
+			legend1->BackColor = System::Drawing::SystemColors::Control;
+			legend1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			legend2->IsTextAutoFit = false;
-			legend2->Name = L"Legend1";
-			this->chart1->Legends->Add(legend2);
+			legend1->IsTextAutoFit = false;
+			legend1->Name = L"Legend1";
+			this->chart1->Legends->Add(legend1);
 			this->chart1->Location = System::Drawing::Point(502, 12);
 			this->chart1->Name = L"chart1";
 			this->chart1->Palette = System::Windows::Forms::DataVisualization::Charting::ChartColorPalette::Excel;
-			series2->ChartArea = L"ChartArea1";
-			series2->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Spline;
-			series2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			series1->ChartArea = L"ChartArea1";
+			series1->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Spline;
+			series1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			series2->Legend = L"Legend1";
-			series2->Name = L"Series1";
-			this->chart1->Series->Add(series2);
+			series1->Legend = L"Legend1";
+			series1->Name = L"Series1";
+			this->chart1->Series->Add(series1);
 			this->chart1->Size = System::Drawing::Size(840, 587);
 			this->chart1->TabIndex = 17;
 			this->chart1->Text = L"chart1";
-			title2->Alignment = System::Drawing::ContentAlignment::TopCenter;
-			title2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			title1->Alignment = System::Drawing::ContentAlignment::TopCenter;
+			title1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			title2->Name = L"Title1";
-			title2->Text = L"Graph of the functions";
-			this->chart1->Titles->Add(title2);
+			title1->Name = L"Title1";
+			title1->Text = L"Graph of the functions";
+			this->chart1->Titles->Add(title1);
+			this->chart1->MouseDown += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::chart1_MouseDown);
+			this->chart1->MouseMove += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::chart1_MouseMove);
+			this->chart1->MouseUp += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::chart1_MouseUp);
+			this->chart1->MouseWheel += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::Chart1_MouseWheel);
 			// 
 			// checkBox1
 			// 
@@ -484,37 +488,13 @@ namespace FunctionTabulationWinAPI {
 		chartArea3D->Area3DStyle->Perspective = 1;
 		chartArea3D->Area3DStyle->Inclination = 30;
 		chartArea3D->Area3DStyle->PointDepth = 1000;
-		chartArea3D->Area3DStyle->PointGapDepth = 200;
+		chartArea3D->Area3DStyle->PointGapDepth = 0;
 		chartArea3D->Area3DStyle->WallWidth = 5;
 		chartArea3D->Name = L"ChartArea3D";
-		chartArea3D->AxisX->Enabled = DataVisualization::Charting::AxisEnabled::False;
-		chartArea3D->AxisY->Enabled = DataVisualization::Charting::AxisEnabled::False;
-
-		// ÊÀÊ ÁËßÒÜ ÇÓÌÈÒÜ-ÒÎ
-		/*chartArea3D->AxisX->ScaleView->Zoom(2, 3);
-		chartArea3D->CursorX->IsUserEnabled = true;
-		chartArea3D->CursorX->IsUserSelectionEnabled = true;
-		chartArea3D->CursorY->IsUserEnabled = true;
-		chartArea3D->CursorY->IsUserSelectionEnabled = true;
-		chartArea3D->AxisX->ScaleView->Zoomable = true;
-		chartArea3D->AxisY->ScaleView->Zoomable = true;
-		chartArea3D->AxisX->ScrollBar->IsPositionedInside = true;
-		chartArea3D->AxisY->ScrollBar->IsPositionedInside = true;
-		chartArea3D->CursorX->Interval = 0.001;
-		chartArea3D->CursorY->Interval = 0.001;*/
-		//http://www.cyberforum.ru/cpp-cli-winforms/thread614465.html
-		//http://www.cyberforum.ru/cpp-cli-winforms/thread963244.html
-		//https://www.outcoldman.com/ru/archive/2009/03/21/ms-chart-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80-perfomance-counters-c-3d-%D0%B2%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC/
-		// Ïåðåäâèæåíèå îáëàñòè ãðàôèêà MSChart ìûøüþ
-		//https://ru.stackoverflow.com/questions/558833/%D0%9F%D0%B5%D1%80%D0%B5%D0%B4%D0%B2%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8-%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%B0-mschart-%D0%BC%D1%8B%D1%88%D1%8C%D1%8E
-		//http://qaru.site/questions/12705573/how-to-plot-a-3d-graph-to-represent-an-object-in-space
-
-		//Ãðàôèêè 
-		//http://grafikus.ru/plot3d
-		//http://blog.kislenko.net/show.php?id=1551
-
-
-
+		chartArea3D->AxisX->Enabled = DataVisualization::Charting::AxisEnabled::True;
+		chartArea3D->AxisY->Enabled = DataVisualization::Charting::AxisEnabled::True;
+		chartArea3D->AxisX->MajorGrid->Interval = 1;
+		chartArea3D->AxisY->MajorGrid->Interval = 1;
 
 		return chartArea3D;
 	}
@@ -588,23 +568,6 @@ namespace FunctionTabulationWinAPI {
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e)
 	{
 		// Íàñòðîéêà ãðàôèêà
-		//https://www.youtube.com/watch?v=995cCh3am-Q
-		//chart1->Series[0]->LegendText = "sin(x)";
-		//chart1->Series[0]->Color = System::Drawing::Color::Blue;
-		//chart1->Series[0]->BorderWidth = 2;
-
-
-		//chart1->ChartAreas[0]->AxisY->Minimum = -2;
-		//chart1->ChartAreas[0]->AxisY->Maximum = 2;
-
-		//chart1->ChartAreas[0]->AxisX->IntervalOffset = 1;
-		//chart1->ChartAreas[0]->AxisY->IntervalOffset = 1;
-
-		//chart1->ChartAreas[0]->AxisX->Enabled = DataVisualization::Charting::AxisEnabled::False;
-		//chart1->ChartAreas[0]->AxisY->Enabled = DataVisualization::Charting::AxisEnabled::False;
-			// Ñòðåëêè
-		//chart1->ChartAreas[0]->AxisY->ArrowStyle = DataVisualization::Charting::AxisArrowStyle::Triangle;
-		//chart1->ChartAreas[0]->AxisX->ArrowStyle = DataVisualization::Charting::AxisArrowStyle::Triangle;
 		chart1->ChartAreas[0]->AxisX->MajorGrid->Interval = 1;
 		chart1->ChartAreas[0]->AxisY->MajorGrid->Interval = 1;
 
@@ -625,7 +588,7 @@ namespace FunctionTabulationWinAPI {
 		delete tabl;
 	}
 
-			 // Ïðîâåðêà ââåäåííûõ äàííûõ â "Function"
+		   // Ïðîâåðêà ââåäåííûõ äàííûõ â "Function"
 	private: System::Void TextBox1_Leave(System::Object^ sender, System::EventArgs^ e)
 	{
 		try
@@ -709,7 +672,7 @@ namespace FunctionTabulationWinAPI {
 			MessageBox::Show(text, "Argument error dx.", MessageBoxButtons::OK);
 		}
 	}
-		   
+
 		   // Îáðàáîòêà íàæàòèÿ Calculate
 	private: System::Void Button1_Click(System::Object^ sender, System::EventArgs^ e)
 	{
@@ -751,7 +714,6 @@ namespace FunctionTabulationWinAPI {
 		marshalString(textBox1->Text, func);
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		// ÎÏÐÅÄÅËÈÒÜÑß Ñ ÓÏÐÀÂËÅÍÈÅÌ 3D ÃÐÀÔÈÊÀ
 		// ÍÀÑÒÐÎÈÒÜ ÑÅÒÊÈ ÍÀ 2D È 3D ÃÐÀÔÈÊÅ
 		// ÓÄÀËÈÒÜ SERIES 1  ÏÐÈ ÇÀÃÐÓÇÊÅ ÔÎÐÌÛ
 		// ÄÎÁÀÂÈÒÜ Â ÏÀÐÑÅÐ PI EXP
@@ -800,11 +762,80 @@ namespace FunctionTabulationWinAPI {
 			chart1->Series->Clear();
 		}
 	}
+		   //Äåéñòâèÿ íàä 3D ãðàôèêîì
+	private: int savedX;
+	private: int savedY;
+
+	private: System::Void chart1_MouseMove(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e)
+	{
+		if (checkBox2->Checked)
+		{
+
+			if (e->Button == Windows::Forms::MouseButtons::Left)
+			{
+				int x = chart1->ChartAreas[1]->Area3DStyle->Rotation;
+				int y = chart1->ChartAreas[1]->Area3DStyle->Inclination;
+
+				// Âëåâî âïðàâî
+				if (e->X < savedX)
+					x += 2;
+				else if (e->X > savedX)
+					x -= 2;
+				chart1->ChartAreas[1]->Area3DStyle->Rotation = Math::Max(Math::Min(x, 90), -90);
+
+				// Ââåðõ âíèç
+				if (e->Y > savedY)
+					y += 1;
+				else if (e->Y < savedY)
+					y -= 1;
+				chart1->ChartAreas[1]->Area3DStyle->Inclination = Math::Max(Math::Min(y, 90), 0);
+
+				savedX = e->X;
+				savedY = e->Y;
+			}
+		}
+	}
+
+	private: System::Void chart1_MouseDown(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e)
+	{
+		if (checkBox2->Checked)
+		{
+			if (e->Button == Windows::Forms::MouseButtons::Left)
+			{
+				this->Cursor = Windows::Forms::Cursors::NoMove2D;
+				savedX = e->X;
+				savedY = e->Y;
+			}
+		}
+	}
+
+	private: System::Void chart1_MouseUp(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e)
+	{
+		if (checkBox2->Checked)
+		{
+			if (e->Button == Windows::Forms::MouseButtons::Left)
+				this->Cursor = Windows::Forms::Cursors::Default;
+		}
+	}
+
+	private: System::Void Chart1_MouseWheel(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e)
+	{
+		if (checkBox2->Checked)
+		{
+			int width = chart1->ChartAreas[1]->InnerPlotPosition->Width;
+			int height = chart1->ChartAreas[1]->InnerPlotPosition->Height;
+			if (e->Delta > 0)
+			{
+				chart1->ChartAreas[1]->InnerPlotPosition->Width = Math::Min(width + 5, 100);
+				chart1->ChartAreas[1]->InnerPlotPosition->Height = Math::Min(height + 5, 100);
+			}
+			else
+			{
+				chart1->ChartAreas[1]->InnerPlotPosition->Width = Math::Max(width - 5, 50);
+				chart1->ChartAreas[1]->InnerPlotPosition->Height = Math::Max(height - 5, 50);
+			}
+		}
+	}
 
 	};
 }
-
-//http://blog.kislenko.net/show.php?id=1284
-
-// äëÿ tabcontrol
-//https://metanit.com/sharp/windowsforms/3.5.php
