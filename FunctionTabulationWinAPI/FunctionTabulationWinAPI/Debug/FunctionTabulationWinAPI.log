@@ -1,9 +1,0 @@
-﻿  MyForm.cpp
-D:\Microsoft\source\repos\FunctionTabulation\FunctionTabulationWinAPI\FunctionTabulationWinAPI\MyForm.h(825,14): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
-D:\Microsoft\source\repos\FunctionTabulation\FunctionTabulationWinAPI\FunctionTabulationWinAPI\MyForm.h(826,15): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
-D:\Microsoft\source\repos\FunctionTabulation\FunctionTabulationWinAPI\FunctionTabulationWinAPI\MyForm.h(829,64): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-D:\Microsoft\source\repos\FunctionTabulation\FunctionTabulationWinAPI\FunctionTabulationWinAPI\MyForm.h(830,65): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-D:\Microsoft\source\repos\FunctionTabulation\FunctionTabulationWinAPI\FunctionTabulationWinAPI\MyForm.h(834,64): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-D:\Microsoft\source\repos\FunctionTabulation\FunctionTabulationWinAPI\FunctionTabulationWinAPI\MyForm.h(835,65): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-  expression.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
-  FunctionTabulationWinAPI.vcxproj -> D:\Microsoft\source\repos\FunctionTabulation\FunctionTabulationWinAPI\Debug\FunctionTabulationWinAPI.exe
